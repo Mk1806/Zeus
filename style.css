@@ -4,11 +4,17 @@
     height: 100vh;
 }
 
-.center-content{
+.center-content {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: center;
     color: #FFF;
+}
+
+body {
+    background: linear-gradient(60deg, #16213E, #61A4BC, #FE7E60, #E94560);
+    background-size: 50%;
+    animation: gradientAnimation 5s ease infinite;
 }
