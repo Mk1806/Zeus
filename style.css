@@ -3,3 +3,12 @@
     justify-content: center;
     height: 100vh;
 }
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #FFF;
+}
