@@ -41,9 +41,9 @@ body {
     font-family: 'Roboto', arial;
 }
 
-/* Books Part */
+/* Motivation's Part */
 
-.books {
+.motivation {
     display: flex;
     color: #F9FAF8;
     background-color: #1F2937;
@@ -52,7 +52,7 @@ body {
     padding: 90px;
 }
 
-.book-cta {
+.motivation-cta {
     flex-basis: 400px;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@ body {
     margin-right: 50px;
 }
 
-.book-cta p {
+.motivation-cta p {
     font-family: 'Roboto', arial;
     opacity: 0.7;
 }
@@ -73,7 +73,7 @@ h1 {
     font-family: 'Roboto', arial;
 }
 
-.books button {
+.motivation button {
     display: block;
     text-align: center;
     width: 110px;
@@ -87,7 +87,7 @@ h1 {
     font-weight: bold;
 }
 
-.book-image img {
+.motivation-image img {
     width: 500px;
     height: 350px;
 }
