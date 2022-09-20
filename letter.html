@@ -29,24 +29,15 @@
     <br>
     <br>
 
-    
-    <div>
 
         <!--Form Code--> 
-<form action=”mailto:makandamilka@gmail.com”
-method=”POST”
-enctype=”text/plain”
-name=”EmailForm”>
-<label for="name">Name:</label><br>
-<input type="text" id="name" name="name"><br>
-<label for="ContactCommentt">Message:</label><br>
-<textarea id=”ContactCommentt” rows=”6″ cols=”20″>
-<input type="submit" value="Send">
-
-
-
-</textarea>
-</form>
+    <div>
+        <form method="post" name="myemailform" action="form-to-email.php">
+            <p>
+                <label for="email" > Enter Email Address: </label> <br>
+                <input type="text" name="email">
+            </p>
+        </form>
     </div>
 </body>
 </html>
