@@ -34,3 +34,32 @@ body {
     color: #3c2e9e;
     overflow: hidden;
 }
+
+.button:focus {
+    animation: morph 1.25s forwards;
+}
+
+.button > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.plane {
+    display: none;
+}
+
+.sent,
+.button:focus span {
+    opacity: 0;
+    visibility: hidden;
+}
+.button:focus .sent {
+    animation: reveal 1s 1.25s forwards;
+}
+.button:focus .plane {
+    display: block;
+    animation: takeOff 1s forwards;
+}
