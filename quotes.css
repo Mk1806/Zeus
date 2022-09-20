@@ -37,3 +37,16 @@ body {
     width: 600px;
     height: 150px;
 }
+
+.main-nav li {
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    transform: rotate(45deg);
+    transition: 0.5s;
+    margin: -100px;
+    overflow: hidden;
+    opacity: o.6;
+}
