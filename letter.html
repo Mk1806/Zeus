@@ -32,13 +32,16 @@
 
         <!--Form Code--> 
     <div>
-<form action="letter.html">
-  <label for="email"> Email Address </label><br>
-  <input type="text" id="email" name="email" value=""><br>
-  <label for="letter"> Write something </label><br>
-  <input type="text" id="letter" name="letter" value=""><br><br>
-  <input type="submit" value="Submit">
-</form>
+        <form method="post" name="myemailform" action="form-to-email.php">
+            <p>
+                <label for="email" > Enter Email Address: </label> <br>
+                <input type="text" name="email">
+            </p>
+            <p>
+                <label for="message" > Type Message: </label> <br>
+                <input type="text" name="message">
+            </p>
+            <input type="submit" value="Submit" >
     </div>
 </body>
 </html>
