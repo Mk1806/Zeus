@@ -8,6 +8,18 @@ body {
     font-family: 'Roboto', arial;
 }
 
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+       background-position: 100% 50%; 
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -185,7 +197,6 @@ h3 {
 /* Footer */
 
 .footer {
-    background-color: #1F2937;
     color: #fff;
     font-family: 'Roboto', arial;
 }
