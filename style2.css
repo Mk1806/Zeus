@@ -25,3 +25,12 @@ body {
     }
 }
 
+.button {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: #f3f3f3;
+    color: #3c2e9e;
+    overflow: hidden;
+}
