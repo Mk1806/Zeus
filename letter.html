@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style2.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="contact.css" rel="stylesheet" type="text/css" media="all"/>
     
     <title> Letter </title>
 </head>
@@ -32,12 +32,13 @@
 
         <!--Form Code--> 
     <div>
-        <form method="post" name="myemailform" action="form-to-email.php">
-            <p>
-                <label for="email" > Enter Email Address: </label> <br>
-                <input type="text" name="email">
-            </p>
-        </form>
+<form action="letter.html">
+  <label for="email"> Email Address </label><br>
+  <input type="text" id="email" name="email" value=""><br>
+  <label for="letter"> Write something </label><br>
+  <input type="text" id="letter" name="letter" value=""><br><br>
+  <input type="submit" value="Submit">
+</form>
     </div>
 </body>
 </html>
