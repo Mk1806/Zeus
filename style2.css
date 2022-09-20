@@ -39,7 +39,15 @@ body {
     border: none;
     border-radius: 4px;
     overflow: hidden;
+    cursor: pointer;
 }
+
+img {
+    width: 500px;
+    height: 250px;
+    margin-right: auto;
+}
+
 .button:focus {
     animation: morph 1.25s forwards;
 }

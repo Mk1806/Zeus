@@ -12,14 +12,14 @@
    <div class>
     <h1> Take a moment and really think...</h1>
     <h2> Think about your olderself...</h2>
-    <h3> And your olderself too..</h3>
-    <h4> Anyting you would want done different...</h4>
+    <h3> And your youngerself too..</h3>
+    <h4> Anything you would want done different...</h4>
     </div>
     <br> 
     <br>
     <br>
     <div>
-        <h2> Write a letter to you olderself... you can write more then one.
+        <h2> Write a letter to your olderself.
             Send it to yourself and read it when times get tough... or even when everything is going alright.
             It's supposed to encourage you, remind you where you have come from.
             It doesn't have to be perfect, just understandable is enough.
@@ -28,9 +28,25 @@
     <br>
     <br>
     <br>
+
+    
     <div>
+
+        <!--Form Code--> 
+<form action=”mailto:makandamilka@gmail.com”
+method=”POST”
+enctype=”text/plain”
+name=”EmailForm”>
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"><br>
+<label for="ContactCommentt">Message:</label><br>
+<textarea id=”ContactCommentt” rows=”6″ cols=”20″>
+<input type="submit" value="Send">
+</form>
+
+        <a href ="mailto:makandamilka@gmail.com"> Write here! </a> <br>
         <button class="button">
-            <span class="send">Send message</span>
+            <span class="send"> Send message </span>
             <i class="ri-send-plane-fill plane"></i>
             <span class="sent">Message sent</span>
         </button>

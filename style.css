@@ -55,7 +55,7 @@ body {
     font-family: 'Roboto', arial;
 }
 
-/* Motivation's Part */
+/* Motivation Part */
 
 .motivation {
     display: flex;
@@ -152,8 +152,8 @@ h1 {
     text-align: right;
 }
 
-/* Sign Up Part */
-.sign-up {
+/* Contact Part */
+.contact {
     background-color: #3882F6 ;
     margin: 50px 200px;
     padding: 10px 80px;
@@ -163,15 +163,15 @@ h1 {
     border-color: none;
 }
 
-.sign-item {
+.contact {
     flex: 1;
 }
 
-.signs-text {
+.contact-text {
     text-align: left;
 }
 
-.signs-text p {
+.contact-text p {
     color: #fff;
     opacity: 0.7;
     margin: 5px 30px 30px 50px;
