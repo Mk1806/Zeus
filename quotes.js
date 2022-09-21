@@ -10,7 +10,6 @@ function randomQuote() {
             };
 
             $("#randomQuote").html("<p id='randomQuote'><i class=\"fa fa-quote-left\"></i> &nbsp; &nbsp;" + quoteData.quoteText + "<br/> <div class=\"text-right\"> &dash;" + quoteData.quoteAuthor + "</div></p>");
-            $("#tweetMe").attr("href", "https://twitter.com/home/?status=" + quoteData.quoteText + ' - ' + quoteData.quoteAuthor);
         }
     });
 }
