@@ -1,52 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Quote Machine</title>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
-    <body>
-        <div id="wrapper">
-            <template v-if="quotes">
-                <div id="quote-box">
-                    <transition
-                        name="quote-text-animation"
-                        mode="out-in"
-                        enter-active-class="animate__animated animate__fadeIn"
-                        leave-active-class="animate__animated animate__fadeOut"
-                    >
-                        <div v-bind:style="{ color: activeColor }" v-bind:key="randomQuoteIndex" class="quote-text">{{ quote.text }}</div>
-                    </transition>
-                    <transition
-                        name="quote-author-animation"
-                        mode="out-in"
-                        enter-active-class="animate__animated animate__fadeIn"
-                        leave-active-class="animate__animated animate__fadeOut"
-                    >
-                        <div class="quote-author" v-bind:key="randomQuoteIndex" v-bind:style="{ color: activeColor }">- {{ quote.author }}</div>
-                    </transition>
-                    <div class="buttons">
-                        <button v-on:click="randomize" v-bind:style="{ backgroundColor: activeColor}" id="new-quote">New Quote</button>
-                        <tweet-button 
-                        v-bind:tweet-message="quote.text + ' - ' + quote.author"
-                        v-bind:style="{ backgroundColor: activeColor}"
-                        class="tweet-quote">
-                            <i slot="icon" class="fa fa-twitter"></i>
-                        </tweet-button>
-                        <tumblr-button 
-                        v-bind:caption="quote.author"
-                        v-bind:content="quote.text"
-                        v-bind:style="{ backgroundColor: activeColor}"
-                        class="tumblr-quote">
-                            <i slot="icon" class="fa fa-tumblr"></i>
-                        </tumblr-button>
-                    </div>
-                </div>
-            </template>
-        </div>
-    </body>
+<html lang="en">
 
+<head>
+    <!-- META INFORMATION -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Random Quote Generator">
+    <meta name="keywords" content="HTML,CSS,JavaScript, Quotes, API">
+    <meta name="author" content="Nabin Jaiswal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- END OF META INFORMATION -->
+    <link href="quotes.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <title>Random Quote Generator</title>
+
+    <!-- BOOTSTRAP CDN-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <!-- FONTAWESOME CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 title">
+                <h1>Random Quote Generator</h1>
+            </div>
+            <div class="col-md-12 quoteArea">
+                <p id="randomQuote"></p>
+            </div>
+
+            <div class="col-md-12 buttons text-center">
+                <a href="#" class="btn btn-info" target="_blank" id="tweetMe" role="button">
+                    <i class="fa fa-twitter"></i> &nbsp; Tweet Me</a>
+
+                <a href="#" class="btn btn-info" id="newQuote" role="button">
+                    <i class="fa fa-quote-left"></i> &nbsp;New Quote</a>
+            </div>
+
+            <div class="col-md-12 creator">Made with <i class="fa fa-heart"> </i> &nbsp; by
+                <a href="https://github.com/Rajamanikam" target="_blank">Rajamanikam😉</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <!-- CUSTOM JAVASCRIPT -->
     <script src="quote.js"></script>
+</body>
+
 </html>
