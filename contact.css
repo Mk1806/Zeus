@@ -115,3 +115,13 @@ img {
         transform: translate(100px, -100px);
     }
 }
+
+/* Footer */
+
+.footer {
+    color: #fff;
+    font-family: 'Roboto', arial;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}

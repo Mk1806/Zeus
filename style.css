@@ -184,14 +184,16 @@ h3 {
     margin: 30px 0px 0px 50px;
 }
 
-.signs-button button {
+.contact-button button {
     color: #fff;
     font-family: 'Roboto', arial;
     border-color: #fff;
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: #3882F6;
     padding: 5px 25px;
     font-size: 15px;
+    size: 0ch;
+    position:right;
 }
 
 /* Footer */
