@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(60deg, #16213E, #61A4BC, #FE7E60, #E94560);
+    background-size: 500%;
+    animation: gradientAnimation 5s ease infinite;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', arial;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+       background-position: 100% 50%; 
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
